@@ -1,7 +1,20 @@
 <table>
   <tr>
+    <td
+      <p></p>
+      <p>롤 전적검색 사이트</p>
+      <p>---------------------<p>
+      사용언어  :  html,css,javascript,java <br> 
+      프론트앤드 : React <br>
+      백앤드 : Spring Boot (내장tomcat서버) <br>
+      래퍼런스 사이트 : DataDragon,riot API - RiotDeveloperPortal(API 자료 제공),OP.GG(외형 참고 사이트),ChatGPT(전반적인 프로젝트 도움)      
+      <p>평소 좋아하는 게임인 롤의 전적검색 사이트를 만들어 보았습니다.
+      <br>즐겨 이용하는 op.gg 사이트를 참고 하여 이용자의 아이디를 검색하거나 자유로운 커뮤니티 이용 챔피언들의 티어나눠보기를 할수있는 사이트입니다.
+    </td>
+  </tr>
+  <tr>
     <td>
-      <img width="1200" alt="메인화면" src="https://github.com/user-attachments/assets/88c77672-d41a-45fa-9427-138a18c9fb43">
+      <img width="1200" alt="메인화면" src="https://github.com/user-attachments/assets/e273006a-14b8-4e1a-ae06-24e00a6e48cf" />
     </td>
     <td>
       <b>메인화면</b><br><br>
@@ -10,7 +23,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="272" height="597" alt="로그인 후 화면" src="https://github.com/user-attachments/assets/2b787d67-183d-44b9-a7f5-ae2539f53d43" />
+      <img width="272" height="597" alt="로그인 후 화면" src="https://github.com/user-attachments/assets/dff7f087-8902-414d-90da-69b0efd4a813" />  
     </td>
     <td>
       <b>로그인 후 화면</b><br><br>
@@ -22,7 +35,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="883" height="709" alt="로그인페이지" src="https://github.com/user-attachments/assets/8ef0bf9f-359c-494a-a4f8-5d6e0dab4c5e" />
+      <img width="883" height="709" alt="로그인페이지" src="https://github.com/user-attachments/assets/39378581-220f-4d4e-9dac-074fe1854436" />
     </td>
     <td>
       <b>로그인 페이지</b><br><br>
@@ -32,7 +45,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="647" height="379" alt="회원가입페이지" src="https://github.com/user-attachments/assets/5e509bb8-3a02-4045-8da6-7308d74e2c2b" />
+      <img width="647" height="379" alt="회원가입페이지" src="https://github.com/user-attachments/assets/36adb931-3cb6-4aca-9d30-1a578429f1ec" />
     </td>
     <td>
       <b>회원가입 페이지</b><br><br>
@@ -43,10 +56,10 @@
   </tr>
   <tr>
     <td align="center">
-      <img width="690" height="382" alt="구글아이디로 회원가입시" src="https://github.com/user-attachments/assets/2769cc7b-8bdd-4c43-a5c7-339b6e57ed70" />
+      <img width="690" height="382" alt="구글아이디로 회원가입시" src="https://github.com/user-attachments/assets/b75996ca-f108-4145-8e19-2096b30e3ac8" />
     </td>
     <td>
-      <b>회원가입 페이지</b><br><br>
+      <b>회원가입 페이지(구글)</b><br><br>
       회원가입을 하는 페이지<br>
       구글 아이디로 로그인을 하려 했을때 홈페이지에 가입된
       구글 아이디가 없다면 회원가입창으로 보내집니다.
@@ -54,7 +67,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="1899" height="938" alt="전적 검색 화면" src="https://github.com/user-attachments/assets/ece32121-bb16-42de-bc8d-54efc38db7b4" />
+      <img width="1899" height="938" alt="전적 검색 화면" src="https://github.com/user-attachments/assets/b1b3404b-db27-45be-8c9d-5c0e467deaef" />
     </td>
     <td>
       <b>전적검색 페이지</b><br><br>
@@ -66,7 +79,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="1026" height="763" alt="더보기 시" src="https://github.com/user-attachments/assets/ebea518c-9c93-482a-b360-3d264398ceec" />
+      <img width="1026" height="763" alt="더보기 시" src="https://github.com/user-attachments/assets/9075d371-3306-4828-8d8a-ac7fc9b72713" />
     </td>
     <td>
       <b>전적검색 페이지(더보기)</b><br><br>
@@ -75,7 +88,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="962" height="131" alt="더보기 시 변화" src="https://github.com/user-attachments/assets/858e45d1-9ddb-4ed5-9652-ee3338da5089" />
+      <img width="962" height="131" alt="더보기 시 변화" src="https://github.com/user-attachments/assets/b2d1e020-3732-4d25-b48c-321637929f29" />
     </td>
     <td>
       <b>전적검색 페이지(더보기)</b><br><br>
@@ -84,16 +97,7 @@
   </tr> 
   <tr>
     <td align="center">
-        <img width="1026" height="763" alt="더보기 시" src="https://github.com/user-attachments/assets/ebea518c-9c93-482a-b360-3d264398ceec" />
-    </td>
-    <td>
-      <b>전적검색 페이지(더보기)</b><br><br>
-      맨 하단에 있는 더보기 버튼을 누를시 <br> 5개씩 유저의 전적이 계속 조회됩니다
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-        <img width="970" height="863" alt="전적 상세보기" src="https://github.com/user-attachments/assets/fcfc1b45-a41c-44ea-ad16-86e352e1f7a5" />
+      <img width="970" height="863" alt="전적 상세보기" src="https://github.com/user-attachments/assets/ac4f3aa4-3f35-42a9-aea9-dc1013ed8083" />
     </td>
     <td>
       <b>전적 상세보기 페이지</b><br><br>
@@ -104,7 +108,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="965" height="695" alt="전적 상세보기 빌드" src="https://github.com/user-attachments/assets/a1a008fa-6f37-4f22-bf29-71ef3fd91e87" />
+      <img width="965" height="695" alt="전적 상세보기 빌드" src="https://github.com/user-attachments/assets/b3583b46-a029-4a6c-8060-9ee624a7451d" />
     </td>
     <td>
       <b>전적 상세보기 페이지(빌드)</b><br><br>
@@ -115,7 +119,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="968" height="736" alt="전적 상세보기 수급 챠트" src="https://github.com/user-attachments/assets/eee89e81-bfb9-4d32-a875-a5e8fcb45bcc" />
+      <img width="968" height="736" alt="전적 상세보기 수급 챠트" src="https://github.com/user-attachments/assets/7d8aea8a-3cbd-41d0-9a42-045e809da149" />
     </td>
     <td>
       <b>전적 상세보기 페이지(챠트)</b><br><br>
@@ -125,7 +129,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="1920" height="956" alt="자유게시판" src="https://github.com/user-attachments/assets/fdfa875a-926c-44f5-a596-4c51ae13fd6c" />
+      <img width="1920" height="956" alt="자유게시판" src="https://github.com/user-attachments/assets/3d9d6c13-19fc-440c-8231-d4316668edea" />
     </td>
     <td>
       <b>자유 게시판</b><br><br>
@@ -136,7 +140,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="1217" height="842" alt="자유게시판 디테일" src="https://github.com/user-attachments/assets/9457a01f-3f89-466b-9a9b-b1ecc2494f17" />
+      <img width="1217" height="842" alt="자유게시판 디테일" src="https://github.com/user-attachments/assets/76fb98c3-d4ca-486a-858d-061fa24395f6" />
     </td>
     <td>
       <b>자유 게시판(상세)</b><br><br>
@@ -148,7 +152,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="843" height="858" alt="자유게시판 댓글과 대댓글" src="https://github.com/user-attachments/assets/cbe2ecb1-bcfb-486a-a129-576a7917e266" />
+      <img width="843" height="858" alt="자유게시판 댓글과 대댓글" src="https://github.com/user-attachments/assets/739ceb12-6305-4e7d-b688-6a4f94b93f8d" />
     </td>
     <td>
       <b>자유 게시판(댓글)</b><br><br>
@@ -157,7 +161,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="811" height="715" alt="자유게시판 글쓰기 (수정 동일)" src="https://github.com/user-attachments/assets/46de51b4-41f8-44ec-ba5a-5ee41cd0470c" />
+      <img width="811" height="715" alt="자유게시판 글쓰기 (수정 동일)" src="https://github.com/user-attachments/assets/543ae989-5a3c-4056-9849-bbb986596d1b" />
     </td>
     <td>
       <b>자유 게시판(글쓰기)</b><br><br>
@@ -167,7 +171,7 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="919" height="890" alt="자유게시판 수정" src="https://github.com/user-attachments/assets/5e2f1f9e-a233-4ca5-ba5b-b6953110504b" />        
+      <img width="919" height="890" alt="자유게시판 수정" src="https://github.com/user-attachments/assets/2e245364-66bf-4cd0-8dcb-917da23a8514" />
     </td>
     <td>
       <b>자유 게시판(수정)</b><br><br>
@@ -177,9 +181,9 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="1915" height="946" alt="듀오매칭 게시판" src="https://github.com/user-attachments/assets/c210cee2-009d-4aa7-876c-4c7a3a6ffe74" />
-        <img width="841" height="883" alt="듀오매칭게시판 수정" src="https://github.com/user-attachments/assets/00b2dfe8-fd97-4f90-8f56-a62b2d1832bc" />
-        <img width="848" height="787" alt="듀오매칭게시판 상세와 댓글" src="https://github.com/user-attachments/assets/c511aff5-1c9d-4597-8de2-0b3717a09c15" />
+      <img width="1915" height="946" alt="듀오매칭 게시판" src="https://github.com/user-attachments/assets/de422fd9-be9c-4ef8-8d09-4f9d30aeebc8" />
+      <img width="848" height="787" alt="듀오매칭게시판 상세와 댓글" src="https://github.com/user-attachments/assets/77307ab1-0e7c-4fe8-b88a-9399c8ae29e2" />
+      <img width="841" height="883" alt="듀오매칭게시판 수정" src="https://github.com/user-attachments/assets/28181977-8048-4491-8f21-c9cea2ce8073" />
     </td>
     <td>
       <b>듀오찾기 게시판</b><br><br>
@@ -191,8 +195,8 @@
   </tr>
   <tr>
     <td align="center">
-        <img width="1495" height="817" alt="티어박스" src="https://github.com/user-attachments/assets/9f69ea11-da69-4909-9237-8b6ab685b799" />
-        <img width="1530" height="886" alt="티어박스2" src="https://github.com/user-attachments/assets/8f919dbc-7ed8-4baa-a3f6-adf21d945eb4" />
+      <img width="1495" height="817" alt="티어박스" src="https://github.com/user-attachments/assets/bb86128d-e777-4a15-8b86-f842a63ea37c" />
+      <img width="1530" height="886" alt="티어박스2" src="https://github.com/user-attachments/assets/073d45f2-a197-4ff0-b772-e9f4716e1dce" />
     </td>
     <td>
       <b>티어 박스</b><br><br>
