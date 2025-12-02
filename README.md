@@ -6,7 +6,7 @@
       <p>---------------------<p>
       사용언어  :  html,css,javascript,java <br> 
       프론트앤드 : React <br>
-      백앤드 : Spring Boot (내장tomcat서버) <br>
+      백앤드 : Spring Boot (주요 라이브러리 : mybatis,spring security) 빌드도구 : gradle<br> 
       래퍼런스 사이트 : DataDragon,riot API - RiotDeveloperPortal(API 자료 제공),OP.GG(외형 참고 사이트),ChatGPT(전반적인 프로젝트 도움)      
       <p>평소 좋아하는 게임인 롤의 전적검색 사이트를 만들어 보았습니다.
       <br>즐겨 이용하는 op.gg 사이트를 참고 하여 이용자의 아이디를 검색하거나 자유로운 커뮤니티 이용 챔피언들의 티어나눠보기를 할수있는 사이트입니다.
