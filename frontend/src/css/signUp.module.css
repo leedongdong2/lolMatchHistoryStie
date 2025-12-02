@@ -1,0 +1,65 @@
+.signUpTitlePosition {
+    min-height: 7vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+}
+
+.signUpTitleFont {
+    font-size:xx-large;
+    font-weight:500;
+    color: #5f57579d;
+}
+
+.signUpBox {
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+}
+
+.signUpInputBox{
+    display: flex;
+    flex-direction: column;
+    gap:1vh
+}
+
+.flex{
+    display: flex;
+}
+
+.signUpFontBox {
+    width: 4vw;
+}
+
+.signUpNicknameFontBox{
+    width: 4.3vw;
+}
+
+.signUpIdCheckBox {
+    all: unset;
+    font-size:small;
+    cursor: pointer;
+    margin-left: 0.5vw;
+}
+
+.nickNameCheckBox {
+    all: unset;
+    font-size:small;
+    cursor: pointer;
+    margin-left: 0.5vw;
+}
+
+.lolNameCheckBox {
+    all: unset;
+    margin-left: 0.5vw;
+    cursor: pointer;
+    font-size: small;
+}
+
+.signUpButton{
+    all: unset;
+    cursor: pointer;
+    height: 5vh;
+}

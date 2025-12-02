@@ -1,0 +1,318 @@
+.communityCommentBox {
+    width: 90%;
+    margin-left: 1vw;
+    margin-top: 0.1vh;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.communityCommentInfo {
+    margin-top: 0.7vh;
+}
+
+.communityComment {
+    margin-top: 2vh;
+    margin-left: 0.4vw;
+}
+
+.toggleReplyForm {
+    cursor: pointer;
+    margin-top: 3vh;
+    font-size: small;
+}
+
+.communityCommentButtons{
+    margin-left: auto;
+    margin-top: 3vh;
+    font-size: small;
+}
+
+.communityReplyFormBox{
+    margin-top: 0.5vh;
+}
+
+.replyCommentContent{
+    all:unset;
+    width: 35vw;
+    height: 5vh;
+    background-color: #c7c4c4;
+    color: #000;
+}
+
+.replyCommentBtn{
+    all:unset;
+    cursor: pointer;
+    background-color: #2f3336;
+    width: 3vw;
+    height: 5vh;
+    text-align: center;
+}
+
+
+.detailBox{
+    display: flex;
+    gap: 5vw;
+    padding-top: 5vh;
+}
+
+.detailTuckBox {
+    width: 40vw;
+    min-height: 70vh;
+}
+
+.detailTitleBox {
+    background-color: #23272B; 
+    height: 13vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.detailTitleAlign {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailTitle {
+    color: #BDC1C6;
+    font-size: x-large;
+}
+
+.detailTitleEtcBox {
+    display: flex;
+    margin-top: auto;
+    gap: 0.5vw; 
+    color: #bdc1c6ab;
+    font-size:smaller;
+}
+
+.detailTitleEtc {
+    display: flex;
+    gap:0.5vw;
+    margin-left: auto;
+}
+
+.detailUpdateButton{
+    all : unset;
+    cursor: pointer;
+}
+
+.detailContentBox {
+    display: flex;
+    justify-content: center;
+    background-color: #23272B;
+    min-height: 50vh;
+    margin-top: 0.2vh;
+    color: rgba(210, 241, 241, 0.61)
+}
+
+.detailContent {
+    padding-top: 2vh; 
+    padding-left: 1vw;
+}
+
+.detailCommentWriteBox {
+    display: flex;
+    margin-top: 0.3vh;
+}
+
+.detailCommentWriteContent {
+    all:unset;
+    width: 35.4vw;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.829)
+}
+
+.detailCommentWriteContentBtn {
+    all:unset;width: 4.6vw;
+    text-align: center;
+    height: 8vh;
+     background-color: #2f3336;
+     color: rgba(255, 255, 255, 0.452);
+}
+
+.detailCommentPageBox {
+    display: flex;gap: 0.5vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: rgba(240, 248, 255, 0.692);
+    justify-content: center;
+}
+
+
+
+.whiteColor {
+    color: #fff;
+}
+
+.OpacityWhiteColor {
+    color : #ffffffbe;
+}
+.commonMainBox {
+    display: flex;
+    column-gap: 5vw;
+    padding-top: 5vh;
+}
+
+.recentTenBox {
+    width: 15vw;
+    margin-left: 10vw;
+    background-color: #23272b;
+    height: 60vh;
+}
+
+.recentTenTextBox {
+    margin-top: 1vh;
+    text-align: center;
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+    color: rgba(168, 168, 168, 0.815);
+    border-bottom: 1px solid #1C1C1F;
+}
+
+.recentTenBoardBox {
+    display: flex;
+    height: 5vh;
+    border-bottom: 1px solid #1C1C1F;
+}
+
+.recentTenBoardView {
+    width: 3vw;
+    text-align: center;
+    margin-top: 1.5vh;
+    color: rgba(228, 232, 236, 0.842);
+    font-size: smaller;
+}
+
+.recentTenBoardContentBox {
+    display: flex;
+    margin-top: 0.6vh;
+}
+
+.recentTenBoardTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 10vw;color: #dadbd1d8;
+}
+
+.recentTenBoardCommentCount { 
+    color:#778167de;
+}
+
+.recentTenBoardAuthor {
+    color: #b4b9be98;
+    font-size: 0.7vw;
+}
+
+.mainBoardBox {
+    min-height: 70vh;
+     width: 40vw;
+}
+
+.boardSearchBox {
+    background-color: #23272b;
+    height: 9vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.boardTitle {
+    color: #beb7b7c2;
+    font-weight: 700;
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+}
+
+.boardWriteText {
+    margin-left: auto;
+    margin-right: 1.3vw;
+    margin-top: 1.6vh;
+    font-size: 0.7vw;
+    font-weight: 700;
+    color: #367B69;
+}
+.marginTop {
+    margin-top: 1vh;
+}
+
+.boardContentBox {
+    height: 7vh;
+    display: flex;
+    margin-bottom: 0.2vh;
+    background-color: #23272b;
+}
+
+.boardViewCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+}
+
+.boardContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.minusMarginBottom {
+    margin-bottom: -2vh;
+}
+
+.e0e4d6FontColor {
+    color: #e0e4d6;
+}
+
+.commentCount {
+    color:#778167de;
+}
+
+.boardContentInfo {
+   flex:0 0 100%;
+   color: #b4b9be98;
+   font-size: 0.7vw; 
+}
+
+.boardPageBox{
+    display: flex;
+    margin-top: 1vh;
+    gap: 0.5vw;
+    justify-content: center;
+}
+
+.boardPage{
+    background-color: #30363B;
+    width: 1.3vw;
+    height: 2vh;
+    text-align: center;
+    color: rgba(219, 228, 235, 0.925)
+}
+
+
+.nullListBox {
+ background-color: #23272B; 
+ height: 10vh;
+ color: #ffffff7c;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.pageButton.active {
+    color: #000;
+}
+
+.pageButton {
+    width: 1.3vw;
+    height: 2vh;
+    border: none;
+    background-color: #b4b9be98;
+    color: #fff;
+    cursor: pointer;
+}

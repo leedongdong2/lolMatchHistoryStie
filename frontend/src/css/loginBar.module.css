@@ -1,0 +1,65 @@
+.loginFontBox
+        {
+            margin-top: 5vh;
+            padding: 2vh;
+            text-align: center;
+            cursor:pointer;
+            font-size: large;
+            font-weight: bold;
+            color: #a1a4cf;
+        }
+.loginFontBox:hover
+        {
+            color: #ced0e7;
+            text-decoration: underline #ced0e7 ;
+            text-decoration-thickness: 4px;
+        }
+
+.loginBox {
+    margin-top: 10vh;
+}
+
+.loginNicknameBox {
+    color: rgba(161, 170, 170, 0.993);
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.loginUserInfoBox{
+    display: flex; 
+    flex-wrap: wrap;
+    height: 45vh;
+    margin-top: 1vh;
+}
+
+.loginUserRankBox {
+    width: 100%;
+    text-align: center; 
+    color: rgba(240, 248, 255, 0.705);
+}
+
+.textOver{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.logoutBox{
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.logoutForm{
+    margin-top: auto;
+}
+
+.logoutButton{
+    all:unset;font-size: large;font-weight: 700;color: rgba(240, 248, 255, 0.644);cursor: pointer;
+}
+
+.loginBarRankBox {
+    margin-top: 2vh;
+}

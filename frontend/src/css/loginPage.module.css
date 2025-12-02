@@ -1,0 +1,58 @@
+.loginPageMain 
+                {
+                  position: relative;      
+
+                }
+
+.loginPageHeader
+                {
+                    min-height: 7vh;
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 2em;
+                    position: absolute;
+                    top: 3vh;
+                    left: 2vw;
+                }
+.loginPageMain
+                {
+                    min-height: 80vh;
+                    text-align: center;
+                    position: absolute;
+                    left: 45vw;
+                    top:30vh;
+
+                }  
+.loginPageFooter
+                {
+                    min-height: 10vh;
+                    text-align: center;
+                    position: absolute;
+                    bottom:0;
+                    left: 45vw;
+                }
+.loginFont
+        {
+            font-size:xx-large;
+            font-weight:500;
+            color: #5f57579d;
+        }
+
+.loginInputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    margin-top: 0.5vh;
+}
+
+.loginButton{
+    all: unset;
+    width: 3vw;
+    height: 3vh;
+    font-size: small;
+    cursor: pointer;
+}
+
+.googleLonginBox {
+    font-size: small;
+    margin-top: 1vh;
+}

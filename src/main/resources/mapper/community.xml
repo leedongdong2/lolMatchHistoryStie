@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.reactpf.reactpf.mapper.CommunityMapper">
+
+    <!-- 게시물을 작성한다 -->
+    <insert id="communityWrite" parameterType="com.reactpf.reactpf.dto.CommunityDto">
+        insert into 
+			community
+            (   
+                tn_name,
+                nickname,
+                title,
+                content
+            ) 
+		values
+			(   #{tnName},
+                #{nickname}, 
+                #{title}, 
+                #{content}
+            ) 
+    </insert>
+    <!-- 게시물에 대한 댓글을 작성 -->
+    <insert id="communityCommentWrite" parameterType="com.reactpf.reactpf.dto.CommunityCommentDto">
+        insert 
+            into 
+                communityComment
+                                (
+                                    post_seq,
+                                    content,
+                                    author,
+                                    parent_seq
+                                    ) 
+                values
+                                (
+                                    #{postSeq},
+                                    #{content},
+                                    #{author},
+                                    #{parentSeq}
+                                )
+    </insert>
+    <!-- 게시물을 수정-->
+    <update id="communityUpdate" parameterType="com.reactpf.reactpf.dto.CommunityDto">
+        update 
+            community
+        set 
+            title = (select concat(title,'(수정본)') from community where seq = #{seq}),
+            content = #{content}
+        where 
+            seq = #{seq}
+    </update>
+    <!-- 게시물을 삭제-->
+    <delete id="communityDelete" parameterType="int">
+        DELETE 
+            FROM 
+                community
+            WHERE 
+                seq = #{_parameter}
+    </delete>
+
+    <!-- 유저이름.제목,본문내용을 검색조건에 따라 검색한다-->
+    <select id="searchCommunity" parameterType="com.reactpf.reactpf.dto.CommunityDto" resultType="com.reactpf.reactpf.dto.CommunityDto">
+        SELECT ROW_NUMBER() OVER (ORDER BY created_at DESC) AS row_num,seq,nickname,title,created_at,views,
+                                                                                                    (select 
+                                                                                                        count(post_seq) 
+                                                                                                    from 
+                                                                                                        communitycomment c2 
+                                                                                                    where 
+                                                                                                        c.seq = c2.post_seq) 
+                                                                                                    as commentCount
+        FROM 
+            community c
+        <where>
+            <if test="nickname != null and nickname != ''">
+                OR nickname LIKE CONCAT('%', #{nickname}, '%')
+            </if>
+            <if test="title != null and title != ''">
+                OR title LIKE CONCAT('%', #{title}, '%')
+            </if>
+            <if test="content != null and content != ''">
+                OR content LIKE CONCAT('%', #{content}, '%')
+            </if>
+        </where>
+        <if test="searchOrder == 'Latest'">
+            ORDER BY created_at DESC
+        </if>
+        <if test="searchOrder == 'Popular'">
+            ORDER BY views DESC
+        </if>
+        LIMIT #{limit} OFFSET #{offset}
+    </select>
+    <!-- 검색된 게시물의 숫자-->
+    <select id="countCommunity" parameterType="com.reactpf.reactpf.dto.CommunityDto" resultType="int">
+        SELECT COUNT(*) FROM community
+        <where>
+            <if test="nickname != null and nickname != ''">
+                OR nickname LIKE CONCAT('%', #{nickname}, '%')
+            </if>
+            <if test="title != null and title != ''">
+                OR title LIKE CONCAT('%', #{title}, '%')
+            </if>
+            <if test="content != null and content != ''">
+                OR content LIKE CONCAT('%', #{content}, '%')
+            </if>
+        </where>
+    </select>
+    <!-- 최근 작성된 상위 10개의 게시물을 검색-->
+    <select id="getRecentTenCommunity" resultType="com.reactpf.reactpf.dto.CommunityDto">
+        select 
+            seq,
+            title,
+            nickname,
+            views,
+            (   select 
+                    count(post_seq) 
+                from 
+                    communitycomment c2 
+                where 
+                    c.seq = c2.post_seq) as commentCount 
+        from 
+            community c 
+        order by 
+            created_at desc limit 10
+    </select>
+    <!-- 게시물의 상세페이지를 검색-->
+    <select id="getCommunityDetail" parameterType="int" resultType="com.reactpf.reactpf.dto.CommunityDto">
+        select 
+            nickname,
+            title,
+            content,
+            created_at,
+            seq,
+            views,
+            (select 
+                count(post_seq) 
+            from 
+                communitycomment c2 
+            where 
+                c2.post_seq = #{_parameter}) 
+            as commentCount
+        from 
+            community c
+        where 
+            seq = #{_parameter}
+    </select>
+    <!--게시물 중 부모가없는 최상위 댓글 검색 -->
+    <select id="getCommunityTopComment" parameterType="map" resultType="com.reactpf.reactpf.dto.CommunityCommentDto">
+        SELECT
+            SEQ,
+            POST_SEQ,
+            CONTENT,
+            AUTHOR,
+            PARENT_SEQ, 
+            CREATEd_AT,
+            updated_AT
+        FROM 
+            communityComment
+        WHERE 
+            post_seq = #{postSeq}
+        AND 
+            parent_seq IS NULL
+        ORDER BY 
+            seq DESC
+        LIMIT #{limit} OFFSET #{offset}
+    </select>
+    <!-- 게시물 중 자녀 댓글 검색-->
+    <select id="getChildComment" parameterType="int" resultType="com.reactpf.reactpf.dto.CommunityCommentDto">
+        SELECT
+            SEQ,
+            POST_SEQ,
+            CONTENT,
+            AUTHOR,
+            PARENT_SEQ, 
+            CREATEd_AT,
+            updated_AT
+        FROM
+            communityComment
+        WHERE
+            parent_seq IS NOT NULL
+        AND
+            post_seq = #{_parameter}
+        ORDER BY
+            seq DESC
+    </select>
+<!-- 게시물에 대한 댓글 총 수 -->
+<select id="countCommuntyComment" parameterType="int" resultType="int">
+    SELECT
+        count(*) 
+    FROM 
+        communitycomment c 
+    WHERE 
+        POST_SEQ = #{_parameter} 
+    AND 
+        parent_seq is null
+</select>
+<!--댓글 수정-->
+<update id="updateCommunityComment" parameterType="com.reactpf.reactpf.dto.CommunityCommentDto">
+    update 
+        communitycomment 
+    set 
+        content = #{content} 
+    where 
+        seq = #{seq}
+</update>
+<!-- 조회수 1증가-->
+<update id="communityCommentIncreaseViews" parameterType="int">
+    UPDATE community
+    SET views = views + 1,
+        updated_at = updated_at
+    WHERE seq = #{_parameter}
+</update>
+<!-- 댓글 삭제-->
+<delete id="deleteCommunityComment" parameterType="Long">
+    delete 
+    from 
+        communitycomment 
+    where 
+        seq = #{_parameter}
+</delete>
+
+</mapper>

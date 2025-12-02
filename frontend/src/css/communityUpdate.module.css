@@ -1,0 +1,87 @@
+.updateBox {
+    width: 40vw;
+    margin-left: 30vw;
+}
+
+.updateInputBox {
+   display: flex;
+   margin-bottom: 0.3vh; 
+   
+}
+
+.updateTitleBox {
+    width: 7vw;
+    height: 5vh;
+    background-color: #2f3336;
+    text-align: center;
+}
+
+.updateTitleText {
+    margin-top: 1.5vh;
+    color: rgba(243, 243, 230, 0.801);
+}
+
+.communityUpdateTitleBox {
+    display: flex;
+    align-items: center;
+    width: 35vw;
+    background-color: rgba(240, 255, 255, 0.527);
+}
+
+.communityUpdateTitle {
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+}
+
+.communityUpdateContentBox {
+    background-color: rgba(240, 255, 255, 0.158);
+}
+
+.communityUpdateContent {
+    width: 40vw;
+}
+
+.findMemberBoardUpdateTitle {
+    all:unset;
+    height: 5vh;
+    background-color: rgba(240, 255, 255, 0.527);
+    width: 28vw;
+}
+
+.findMemberBoardUpdateMatchType {
+    width: 10vh;
+    background-color: #2f3336;
+    border: none;
+    outline: none;
+    text-align: center;
+    color:rgba(243, 243, 230, 0.801);
+}
+
+.findMemberBoardUpdateContent {
+    all:unset ;
+    width: 40vw;
+    background-color: #3E4042;
+}
+
+.updateBtn{
+    all:unset;
+    height: 4vh;
+    width: 70%;
+    text-align: center;
+    background-color: #4d5458;
+    cursor: pointer;
+} 
+
+.deleteBtn{
+    all:unset;
+    height: 4vh;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #3E4042;
+}
+
+.updateBtnBox {
+    display: flex;
+    color: rgba(240, 255, 255, 0.445);
+}

@@ -1,0 +1,222 @@
+.findMemberBoardSearchOptionBox {
+    margin-right: 1vw;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.findMemberBoardMatchType {
+    cursor: pointer;
+    width: 4vw;
+    background-color: #31343a;
+    height: 4vh;
+    border: none;
+    outline: none;
+     vertical-align: top;
+}
+
+.findMemberBoardSearchType {
+    cursor: pointer;
+    width: 3vw;
+    height: 4vh;
+    background-color: #31343ac7;
+    border: none;
+    outline: none;
+    vertical-align: top;
+}
+
+.findMemberBoardSearchText {
+    all:unset;
+    width: 15vw;
+    background-color: #161616;
+    height: 4vh;
+    vertical-align: top;
+    color: #fff;
+}
+
+.findMemberBoardSearchButton {
+    cursor: pointer;
+    all:unset;
+    background-color: #31343a;
+    width: 2.2vw;
+    height: 4vh;
+    text-align: left;
+}
+
+.whiteColor {
+    color: #fff;
+}
+
+.OpacityWhiteColor {
+    color : #ffffffbe;
+}
+.commonMainBox {
+    display: flex;
+    column-gap: 5vw;
+    padding-top: 5vh;
+}
+
+.recentTenBox {
+    width: 15vw;
+    margin-left: 10vw;
+    background-color: #23272b;
+    height: 60vh;
+}
+
+.recentTenTextBox {
+    margin-top: 1vh;
+    text-align: center;
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+    color: rgba(168, 168, 168, 0.815);
+    border-bottom: 1px solid #1C1C1F;
+}
+
+.recentTenBoardBox {
+    display: flex;
+    height: 5vh;
+    border-bottom: 1px solid #1C1C1F;
+}
+
+.recentTenBoardView {
+    width: 3vw;
+    text-align: center;
+    margin-top: 1.5vh;
+    color: rgba(228, 232, 236, 0.842);
+    font-size: smaller;
+}
+
+.recentTenBoardContentBox {
+    display: flex;
+    margin-top: 0.6vh;
+}
+
+.recentTenBoardTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 10vw;color: #dadbd1d8;
+}
+
+.recentTenBoardCommentCount { 
+    color:#778167de;
+}
+
+.recentTenBoardAuthor {
+    color: #b4b9be98;
+    font-size: 0.7vw;
+}
+
+.mainBoardBox {
+    min-height: 70vh;
+     width: 40vw;
+}
+
+.boardSearchBox {
+    background-color: #23272b;
+    height: 9vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.boardTitle {
+    color: #beb7b7c2;
+    font-weight: 700;
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+}
+
+.boardWriteText {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1.3vw;
+    margin-top: 1.6vh;
+    font-size: 0.7vw;
+    font-weight: 700;
+    color: #367B69;
+}
+.marginTop {
+    margin-top: 1vh;
+}
+
+.boardContentBox {
+    cursor: pointer;
+    height: 7vh;
+    display: flex;
+    margin-bottom: 0.2vh;
+    background-color: #23272b;
+}
+
+.boardViewCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+}
+
+.boardContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.minusMarginBottom {
+    margin-bottom: -2vh;
+}
+
+.e0e4d6FontColor {
+    color: #e0e4d6;
+}
+
+.commentCount {
+    color:#778167de;
+}
+
+.boardContentInfo {
+   flex:0 0 100%;
+   color: #b4b9be98;
+   font-size: 0.7vw; 
+}
+
+.boardPageBox{
+    cursor: pointer;
+    display: flex;
+    margin-top: 1vh;
+    gap: 0.5vw;
+    justify-content: center;
+}
+
+.boardPageb{
+    cursor: pointer;
+    all:unset;
+    background-color: #30363B;
+    width: 3vw;
+    height: 2vh;
+    text-align: center;
+    font-size: small;
+    color: rgba(219, 228, 235, 0.925)
+}
+
+.boardPage{
+    all:unset;
+    background-color: #30363B;
+    width: 1.3vw;
+    height: 2vh;
+    text-align: center;
+    color: rgba(219, 228, 235, 0.925)
+}
+
+
+.nullListBox {
+ background-color: #23272B; 
+ height: 10vh;
+ color: #ffffff7c;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.active{
+    color: #000;
+}

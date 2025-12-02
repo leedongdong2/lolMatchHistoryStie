@@ -1,0 +1,843 @@
+
+
+.serchMatchLink:hover {
+    cursor: pointer;
+}
+
+.matchType:hover{
+    cursor: pointer;
+}
+
+.findMatchSearchBox {
+    width: 100vw;
+    text-align:  center;
+}
+
+.findMatchSearchSelect {
+    border-radius: 23px 0 0 23px; 
+    border: none;
+    width: 7vw;
+    height: 5vh;
+    padding-left: 1vw;
+    background-color: #31313C;
+    outline: none;
+    color: #7B7A8E;
+    vertical-align: top;
+}
+
+.findMatchSearchInput {
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+    width: 20vw; 
+    height: 5vh; 
+    background-color: #31313C;
+     outline: none;
+     vertical-align: top;
+}
+
+.findMatchSearchButton {
+    border-radius: 0 25px 25px 0; 
+    border: none; 
+    padding: 0;
+    margin: 0; 
+    width: 4vw;
+    height: 5vh;
+    font-weight: bold;
+    background-color: #31313C;
+    color: #7B7A8E;
+    vertical-align: top;
+}
+
+.findMatchInfoBox {
+    width: 50vw;
+    min-height: 70vh;
+    margin-top: 5vh;
+    margin-left: 25vw;
+}
+
+.findMatchprofileBox {
+    position: relative;
+    height: 11vh;
+}
+
+.findMatchSummonerLevel {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    background-color: #202D37;
+    border-radius: 15px;
+    width: 2vw;
+    height: 1.5vh;
+    text-align: center;
+    font-size: smaller;
+    color: #fff;
+    font-weight: 300;
+}
+
+.findMatchUserInfoBox {
+    margin-left: 0.5vw;
+}
+
+.findMatchInfoUserName {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.findMatchInfoUserRankBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.findMatchInfoUserTierBox {
+    text-align: center;
+}
+
+.findMatchInfoUserWin {
+    color: #ffffff77;
+    font-size: smaller;
+}
+
+.chapionMasteryBox {
+    display: flex;
+    gap: 3vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+.chapionMasteryFontSize{
+    font-size: smaller;
+}
+
+.chapionMasteryImg{
+    width: 4vw; 
+    height: auto;
+}
+
+.findMatchTypeBox{
+    display: flex;
+    margin-top: 0.5vh;
+    gap: 0.3vw;
+    color: #fff5d7d8;
+}
+
+.findMatchTypeButton{
+    display: flex;align-items: center;justify-content: center;width: 5vw;height: 3vh;background-color: #464655;border-radius: 5px;
+}
+
+.recentGamesBox{
+    display: flex;
+    background-color: #31313C;
+    height: 10vh;
+    margin-top: 0.5vh;
+}
+
+.recentGamesFontBox {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 6vw;
+    gap: 1vw;
+    color: #e7dfdfc0;
+}
+
+.linePercentBox {
+    width: 50%;
+    height: 100%;
+}
+
+.linePercentChartBox {
+    display: flex;
+    gap: 0.5vw;
+    width: 100%;
+    height: 70%;
+    margin-top: 0.5vh;
+    justify-content: center;
+}
+
+.linePercentBackgroundBar {
+    width: 7%;
+    height: 100%;
+    background-color: #1C1C1F ;
+    display: flex; 
+    align-items: flex-end;
+}
+
+.linePercentFontBox {
+    display:flex;
+    width: 100%;
+    gap: 0.5vw;
+    justify-content: center;
+    color: #ffffff96;
+    margin-top: 0.4vh;
+}
+
+.linePercentFont {
+    width: 7%;
+    text-align: center;
+    font-size: small;
+}
+
+.findMatchListBox {
+    margin-top: 0.7vh;
+}
+
+.findMatchDtoBox {
+    display: flex;
+    min-height: 12vh;
+    border-radius: 5px;
+}
+
+.searchParticipantUserBox {
+    margin-left: 2vw;
+    font-size: small;
+    color: rgba(240, 255, 255, 0.61);
+}
+
+.searchParticipantIdBox {
+    margin-top: 0.3vh;
+}
+
+.searchParticipantUserResultBox {
+    width: 5vw;
+}
+
+.searchParticipantUserWin {
+    margin-top: 3vh;
+}
+
+.searchParticipantUserDurationBox {
+    display: flex;
+    gap: 0.3vw;
+}
+
+.searchParticipantUserMatchInfoBox {
+    margin-left: 2vw;
+    width: 25vw;
+}
+
+.searchParticipantUserMatchInfo {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.searchParticipantChampionImg {
+    width: 3vw;
+    height: auto;
+}
+
+.searchParticipantSummonerSpellImg {
+    width: 1.5vw;
+    height: auto;
+}
+
+.searchParticipantMainRuneImg {
+    width: 2vw; 
+    height: auto;
+}
+
+.searchParticipantSubRuneImg {
+    width: 1vw;
+    height: auto;
+}
+
+.searchParticipantScoreBox {
+    display: flex;
+    gap: 2vw;
+    width: 70%;
+}
+
+.searchParticipantKdaBox {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 45%; 
+}
+
+.searchParticipantKAFont {
+    color: #FFF5D7;
+}
+
+.searchParticipantDFont {
+    color:#E83C43;
+}
+
+.searchParticipantKDAFont{
+    font-size: smaller;
+    color: #fff5d7b0;
+}
+
+.searchParticipantWardScoreBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     width: 35%;
+}
+
+.searchParticipantWardKDFont {
+    font-size: medium;
+    color: #FFF5D7;
+}
+
+.searchParticipantWardScore {
+    font-size: small;
+    color: #fff5d7b0;
+}
+
+.searchParticipantCsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     width: 20%;
+}
+
+.searchParticipantItemBox {
+    margin-top: 0.5vh;
+}
+
+.searchParticipantItemImg {
+    width: 1.5vw;
+    height: auto;
+}
+
+.searchMatchParticipantsBox {
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    color: #fff5d7d5;
+    font-size: small;
+}
+
+.searchMatchParticipants {
+    width: 5.5vw;
+}
+
+.searchMatchParticipantsChampionImg {
+    width: 1vw;
+    height: auto;
+}
+
+.searchMatchParticipantsName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.showMatchInfoMore{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #ffffffd7;
+    border-radius: 0 5px 5px 0;
+}
+
+.overviewTogglePoint{
+    margin-bottom: 0.5vh;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.hideOverViewBox{
+    display: none;
+}
+
+.showOverViewBox{
+    display: block;
+    background-color: #31313C;
+    margin-top: 0.5vh;
+}
+
+.overviewButtonBox {
+    display: flex;
+    width: 50vw;
+    height: 4vh;
+    align-items: center;
+    color: #fff;
+}
+
+.overviewButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20%;
+    height: 3vh;
+}
+
+.hide{
+    display : none;
+}
+
+.OpacityWhiteColor {
+    color : #ffffffbe;
+}
+
+.whiteColor {
+    color: #fff;
+}
+
+.winText {
+    color : #5382DE;
+}
+
+.loseText {
+    color : #E84057;
+}
+
+.winBackground {
+    background-color: #28344E;
+}
+
+.loseBackground {
+    background-color: #59343B;
+}
+
+.winMoreBackground {
+    background-color: #445988ff;
+}
+
+.loseMoreBackground {
+    background-color: #794b53ff;
+}
+
+.marginTop{
+    margin-top: 1vh;
+}
+
+.findMatchInfoShowMoreBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 50vw;
+    height: 4vh;
+    background-color: #31313C;
+    margin-top: 0.2vh;
+    cursor: pointer;
+}
+
+.bgVisible{
+    background-color: #a2b6b0;
+}
+
+
+/**------------------orverview 페이지--------------------------*/
+.teamBox {
+    width: 50vw;
+}
+
+.teamStateBox {
+    display: flex;
+    width: 100%;
+    height: 3vh;
+    font-size: small;
+    background-color: #282830;
+    color: #ffffffa1;
+    align-items: center;
+}
+
+.teamState {
+    width: 32%;
+    display: flex;
+    margin-left: 3vw;
+}
+
+.teamParticipantInfoBox {
+    display: flex;
+    gap: 0.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamParticipantBuildBox {
+    display: flex;
+    width: 15%;
+    justify-content: right;
+}
+
+.teamParticipantNameLevelBox {
+    position: relative;
+    z-index: 0;
+}
+
+.teamParticipantChampionImg {
+    width: 3vw;
+    height: auto;
+}
+
+.teamParticipantChampionLevel {
+    position: absolute;
+    right: 0;
+    bottom:0;
+    z-index: 1;
+    color: #fff;
+    font-size: smaller;
+    background-color: #1C1C1F;
+}
+
+.teamParticipantSummonerSpellImg {
+    width: 1.5vw;
+    height: auto;
+}
+
+.teamParticipantMainRuneImg {
+    width: 2vw;
+    height: auto;
+}
+
+.teamParticipantSubRuneImg {
+    width: 1vw;
+    height: auto;
+}
+
+.teamParticipantScoreBox {
+    display: flex;
+    width: 60%;
+    font-size: smaller;
+}
+
+.teamParticipantId {
+    width: 35%;
+    color: #fff;
+}
+
+.teamParticipantKdaBox {
+    width: 17%;
+    color: #ffffffbe;
+    text-align: center;
+    font-size: x-small;
+}
+
+.teamParticipantDamegePercentBox {
+    width: 11%;
+    color: #ffffffbe;
+    text-align: center;
+}
+
+.teamParticipantDamegePercentBackgroundBar {
+    width: 100%;
+    height: 6px;
+    margin-top: 0.5vh;
+    background-color: #1C1C1F;
+}
+
+.teamParticipantDamegeTakenPercentBox {
+    width: 11%;
+    color: #ffffffbe;
+    text-align: center;
+    margin-left: 1%;
+}
+
+.teamParticipantDamegeTakenPercentBackgroundBar {
+    width: 100%;
+    height: 6px;
+    margin-top: 0.5vh;
+    background-color: #1C1C1F;
+}
+
+.teamParticipantWardScoreBox {
+    width: 12%;
+    color: #ffffffbe;
+    text-align: center;
+}
+
+.teamParticipantCsBox {
+    width: 12%;
+    color: #ffffffbe;
+    text-align: center;
+}
+
+.teamParticipantItemBox {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamParticipantItemImg {
+    width: 2vw;
+    height: auto;
+}
+
+.totalTeamObjectScoreBox {
+    display: flex;
+    width: 50vw;
+    height: 5vh;
+    font-size: small;
+    align-items: center;
+    background-color: #282830;
+}
+
+.teamObjectScoreBox {
+    display: flex;
+    width: 30%;
+}
+
+.blueTeamFont {
+    display: flex;
+    width: 20%;
+    color: #5383E8;
+    margin-left: 1vw;
+}
+
+.buleTeamObjectScoreSize {
+   width: 80%; 
+}
+
+.blueTeamObjectScoreName {
+    color: #5383E8;
+}
+
+.teamObjectScore{
+    color: #ffffff9c;
+}
+
+.redTeamObjectScoreSize {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 2vw;
+}
+
+.redTeamObjectScoreName {
+    color: #E84057;
+}
+
+.redTeamFont {
+    display: flex;
+    width: 20%;
+    color: #E84057;
+}
+
+.teamKillGoldScoreBox{
+    width: 40%;
+}
+
+.teamKillGoldFontPosition {
+    position: absolute;
+    left: 50% ; 
+    transform: translateX(-50%)
+}
+
+#findMatchInfoShowMoreBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 50vw;
+    height: 4vh;
+    background-color: #31313C;
+    margin-top: 0.2vh;
+    cursor: pointer;
+}
+
+.teamTotalKillBox {
+    display: flex;
+    color: #fff;
+    font-size: smaller;
+    position: relative;
+}
+
+.teamTotalGoldBox {
+    display: flex;
+    margin-top: 0.5vh;
+    color: #fff;
+    font-size: smaller;
+    position: relative;
+}
+
+/*--------      아이템 빌드 페이지 --------------------------------------------------------------------------------------*/
+.itemBuildBox {
+    width: 50vw; 
+    background-color: #31313C;
+}
+
+.itemBuildTitleBox {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 3vh;
+    background-color: #282830;
+    color: #ffffffc4;
+    font-size: small;
+}
+
+.itemBuildTitle {
+    margin-left: 2vw;
+}
+
+.itemBuildTimeLineBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+    align-items: center;
+    padding: 5px;
+}
+
+.itemBuildTimeFont {
+    text-align: center;
+    color: #ffffffe0;
+    margin-bottom: 0.5vh;
+    font-size: small;
+}
+
+.itemBuildTimeLine {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0.5vh;
+}
+
+.itemBuildTimeLineArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1C1F;
+    width: 2vw;
+    height: 2vw;
+    font-size: medium;
+    font-weight: bold;
+    color: #fff;
+}
+
+.itemBuildTimeLineItemBox {
+    display: flex;
+    gap: 0.5vw;
+    background-color: #1C1C1F;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.itemBuildTimeLineItemImg {
+    width: 2vw;
+    height: auto;
+}
+
+.skillBuildTimeLineBox {
+    width: 50vw;
+    background-color: #31313C;
+}
+
+.skillBuildTitleBox {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 3vh;
+    background-color: #282830;
+    color: #ffffffc4;
+    font-size: small;
+}
+
+.skillBulidTitle {
+    margin-left: 2vw;
+}
+
+.skillTreeBox {
+    display: flex;
+    gap: 0.2vw;
+    height: 10vh;
+    align-items: center;
+    justify-self: center;
+    margin-left: 2vh;
+}
+
+.Qskill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202D37;
+    color: #135AB8;
+    width: 1.5vw;
+    height:3vh;
+    font-weight: 700;
+}
+
+.Wskill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202D37;
+    color: #00D795;
+    width: 1.5vw;
+    height:3vh;
+    font-weight: 700;
+}
+
+.Eskill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202D37;
+    color: #DB6A15;
+    width: 1.5vw;
+    height:3vh;
+    font-weight: 700;
+}
+
+.Rskill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5383E8;
+    color: #ffffff;
+    width: 1.5vw;
+    height:3vh;
+    font-weight: 700;
+}
+
+.runeBuildBox {
+    width: 50vw;
+    height: 23vh;
+    background-color: #31313C;
+}
+
+.runeBuildTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 3vh;
+    background-color: #282830;
+    color: #ffffffc4;
+    font-size: small;
+}
+
+.runeTreeBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 17vh;
+}
+
+.mainRuneBox {
+    display: flex;
+    align-items: flex-end;
+}
+
+.mainAttributeRuneImg {
+    width: 8vw;
+    height: auto
+}
+
+.subAttributeRuneImg {
+    width: 3vw;
+    height: auto;
+}
+
+.subRuneBox {
+    display: flex;
+    margin-left: 1vw;
+}
+
+.subRuneImg {
+    width: 2vw;
+    height: auto
+}

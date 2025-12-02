@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.reactpf.reactpf.mapper.UserMapper">
+   <!-- 유저 정보 입력(회원가입)-->
+    <insert id="saveUser" parameterType="HashMap">
+        INSERT INTO 
+                TN_MEMBER
+                        (
+                            tn_name,
+                            tn_password,
+                            nickname,
+                            region,
+                            lol_name,
+                            lol_nametag,
+                            role
+                        )
+                values 
+                    (
+                        #{tnName},
+                        #{tnPassword},
+                        #{nickname},
+                        #{region},
+                        #{lolName},
+                        #{lolNametag},
+                        'ROLE_USER'
+                    )
+    </insert>
+    <!-- 아이디 중복체크-->
+     <select id="idCheckAvailability" parameterType="String" resultType="String">
+        select 
+            count(*) 
+        from 
+            tn_member 
+        where 
+            tn_name  = #{_parameter}
+     </select>
+
+     <!--닉네임 중복체크-->
+     <select id="nicknameCheckAvailability" parameterType="String" resultType="String">
+        select 
+            count(nickname) 
+        from 
+            tn_member 
+        where 
+            nickname = #{_parameter}
+     </select>
+    <!-- 로그인시 필요한 유저 정보를 겁색한다-->
+    <select id="loginInfo" parameterType="String" resultType="com.reactpf.reactpf.dto.UserDto">
+           SELECT 
+                *
+            FROM 
+                TN_MEMBER 
+            WHERE TN_NAME = #{_parameter}
+    </select>
+
+    <!---구글 로그인시 구글 이메일이 있는지 확인한다-->
+    <select id="loginEmailCheck" parameterType="String" resultType="com.reactpf.reactpf.dto.UserDto">
+        select 
+            * 
+        from 
+            tn_member tm 
+        where 
+            tn_name = #{_parameter}
+    </select>
+
+
+
+    <!--유저의 롤 아이디 정보를 검색한다-->
+    <select id="getUserInfo" parameterType="String" resultType="com.reactpf.reactpf.dto.UserDto">
+        select 
+            region,
+            lol_name,
+            replace(lol_nametag,'#','') AS  lol_nametag
+        from 
+            tn_member tm 
+        where 
+            tn_name = #{_parameter}
+    </select>
+
+    <select id="getGoogleUser" parameterType="String" resultType="int">
+        select 
+            count(*) 
+        from 
+            tn_member 
+        where 
+            tn_name = #{_parameter}
+    </select>
+</mapper>

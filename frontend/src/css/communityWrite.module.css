@@ -1,0 +1,80 @@
+.writeBox {
+    width: 40vw;
+    margin-left: 30vw;
+}
+
+.writeInfoBox {
+    display: flex;
+    margin-bottom: 0.3vh;
+}
+
+.writeTitleText {
+   margin-top: 1.5vh;
+   color: rgba(243, 243, 230, 0.801); 
+}
+
+.writeButton {
+    cursor: pointer;
+    all:unset;
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+    color: rgba(217, 226, 226, 0.664);
+}
+
+.communityWriteTitleTextBox {
+    width: 5vw;
+    height: 5vh;
+    background-color: #2f3336;
+    text-align: center;
+}
+
+
+.communityWriteTitle {
+    all:unset;
+    height: 5vh;
+    background-color: rgba(240, 255, 255, 0.527);
+    width: 35vw;
+}
+
+.communityWriteContentBox {
+    background-color: rgba(240, 255, 255, 0.158);
+}
+
+.communityWriteContent {
+    width: 39.6vw;
+}
+
+.findMemberBoardWriteTitleTextBox {
+    width: 7vw;
+    height: 5vh;
+    background-color: #2f3336;
+    text-align: center;
+}
+
+.findMemberBoardWriteTitle {
+    all:unset;
+    height: 5vh;
+    background-color: rgba(240, 255, 255, 0.527);
+    width: 28vw;
+}
+
+.findMemberBoardWriteMatchType {
+    width: 10vh;
+    background-color: #2f3336;
+    border: none;
+    outline: none;
+    text-align: center;
+    color:rgba(243, 243, 230, 0.801);
+}
+
+.findMemberBoardWriteContent {
+    all:unset ;
+    width: 40vw;
+    background-color: #3E4042;
+}
+
+.findMemberBoardWriteBtnBox {
+    margin-top: 0.1vh;
+    background-color: #2f3336;
+}

@@ -1,0 +1,65 @@
+
+.mainBox{
+     background-color: #1C1C1F;
+}
+
+.mainRotationChampionImg {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vw;
+        margin: 5vh auto;
+}
+
+.mainSearchBox{
+        position: relative;
+        text-align: center;
+        padding-top: 30vh;
+}
+
+.mainSearchRegionSelect{
+        border-radius: 23px 0 0 23px;
+        border: none;
+        width: 7vw;
+        height: 5vh;
+        padding-left: 1vw;
+        background-color: #31313C;
+        outline: none;
+        color: #7B7A8E;
+        vertical-align: top;
+}
+
+.mainSearchInput{
+        padding: 0;
+        margin: 0;
+        border: none;
+        width: 20vw;
+        height: 5vh;
+        background-color: #31313C;
+        outline: none;
+        vertical-align: top;
+}
+
+.mainSearchButton{
+        border-radius: 0 25px 25px 0;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 4vw;
+        height: 5vh;
+        font-weight: bold;
+        background-color: #31313C;
+        color: #7B7A8E;
+        vertical-align: top;
+}
+
+.inputWrapper{
+        position: relative;
+}
+
+.insideError{
+        position: absolute;
+        left: 41.5vw;
+        top:35vh;
+        color: #d3232360;
+        font-size: small;
+}
