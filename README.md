@@ -14,6 +14,14 @@
   </tr>
   <tr>
     <td>
+      <img width="1109" height="824" alt="database" src="https://github.com/user-attachments/assets/83fdb130-c42a-4878-9539-7374b4c57763" />
+    </td>
+    <td>
+      이미지 및 관련 내용은 DataDragon,riot API를 이용하였습니다
+    </td>
+  </tr>
+  <tr>
+    <td>
       <img width="1200" alt="메인화면" src="https://github.com/user-attachments/assets/e273006a-14b8-4e1a-ae06-24e00a6e48cf" />
     </td>
     <td>
